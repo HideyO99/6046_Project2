@@ -9,7 +9,7 @@ C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp
 C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(87,27): warning C4101: 'vertex_shader': unreferenced local variable
 C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(87,59): warning C4101: 'program': unreferenced local variable
 C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(87,12): warning C4101: 'vertex_buffer': unreferenced local variable
-C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(547,18): warning C4305: 'return': truncation from 'int' to 'bool'
-C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(558,18): warning C4305: 'return': truncation from 'int' to 'bool'
-C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(568,18): warning C4305: 'return': truncation from 'int' to 'bool'
+C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(574,18): warning C4305: 'return': truncation from 'int' to 'bool'
+C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(585,18): warning C4305: 'return': truncation from 'int' to 'bool'
+C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(595,18): warning C4305: 'return': truncation from 'int' to 'bool'
   6046_Project2.vcxproj -> C:\Users\HideyO\source\repos\6046_Media\6046_Project2\x64\Debug\6046_Project2.exe

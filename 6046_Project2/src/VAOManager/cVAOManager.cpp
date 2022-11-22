@@ -318,6 +318,17 @@ bool cVAOManager::setInstanceObjSpecularPower(std::string meshObjName, glm::vec4
 	return true;
 }
 
+bool cVAOManager::getInstanceObjPosition(std::string meshObjName, glm::vec3& pos)
+{
+	std::map<std::string, cMeshObj* >::iterator itCurrentMesh = mapInstanceNametoMeshObj.find(meshObjName);
+	if (itCurrentMesh == mapInstanceNametoMeshObj.end())
+	{
+		return false;
+	}
+	cMeshObj* pCurrentMeshObject = itCurrentMesh->second;
+	pos = pCurrentMeshObject->position;
+}
+
 bool cVAOManager::setInstanceObjPosition(std::string meshObjName, glm::vec4 value)
 {
 	std::map<std::string, cMeshObj* >::iterator itCurrentMesh = mapInstanceNametoMeshObj.find(meshObjName);

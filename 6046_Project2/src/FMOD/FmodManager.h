@@ -54,6 +54,8 @@ public:
 	bool create_stream(const std::string& stream_name, const cXML::MyMusic path, const int mode, const bool is_compress);
 	bool remove_sound(const std::string& Sound_name);
 	bool play_sound(const std::string& Sound_name, const std::string& CH_name);
+	//play 3d sound
+	bool play_sound(const std::string& sound_name, glm::vec3 position, float max_distance);
 	bool stop_sound(const std::string& CH_name);
 	bool get_speed(const std::string& Sound_name, float* speed);
 	bool set_speed(const std::string& Sound_name, float speed);
@@ -74,6 +76,9 @@ public:
 
 	//bool get_dsp_param(const std::string& DSP_name, const int index, const float* value);
 	bool set_dsp_param(const std::string& DSP_name, const int index, const float value);
+
+	//3d sound
+	bool set_listener_position(const glm::vec3 position);
 
 protected:
 	FMOD_RESULT last_result_;

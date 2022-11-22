@@ -248,6 +248,33 @@ int main(void)
     light4Setup();
 
     result = FMOD_setup();
+    std::vector<glm::vec3> SoundPos_3D;
+
+    { //sound 1 setup
+        glm::vec3 Obj_Pos;
+        result = pVAOManager->getInstanceObjPosition("truck01", Obj_Pos);
+        SoundPos_3D.push_back(Obj_Pos);
+    }
+    {//sound 2 setup
+        glm::vec3 Obj_Pos;
+        result = pVAOManager->getInstanceObjPosition("mac01", Obj_Pos);
+        SoundPos_3D.push_back(Obj_Pos);
+    }
+    {//sound 3 setup
+        glm::vec3 Obj_Pos;
+        result = pVAOManager->getInstanceObjPosition("building01", Obj_Pos);
+        SoundPos_3D.push_back(Obj_Pos);
+    }
+    {//sound 4 setup
+        glm::vec3 Obj_Pos;
+        result = pVAOManager->getInstanceObjPosition("building02", Obj_Pos);
+        SoundPos_3D.push_back(Obj_Pos);
+    }
+    {//sound 5 setup
+        glm::vec3 Obj_Pos;
+        result = pVAOManager->getInstanceObjPosition("building03", Obj_Pos);
+        SoundPos_3D.push_back(Obj_Pos);
+    }
 
     while (!glfwWindowShouldClose(window))
     {
@@ -616,10 +643,12 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
     if (key == GLFW_KEY_W)
     {
         ::g_cameraEye.z -= CAMERA_MOVE_SPEED;
+        ::g_cameraEye.x -= CAMERA_MOVE_SPEED;
     }
     if (key == GLFW_KEY_S)
     {
         ::g_cameraEye.z += CAMERA_MOVE_SPEED;
+        ::g_cameraEye.x += CAMERA_MOVE_SPEED;
     }
     if (key == GLFW_KEY_Q)
     {

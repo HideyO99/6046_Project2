@@ -388,6 +388,8 @@ bool FModManager::play_sound(const std::string& Sound_name, const std::string& C
 	return is_Fmod_ok();
 }
 
+
+
 bool FModManager::stop_sound(const std::string& CH_name)
 {
 	FMOD::Channel* channel;
@@ -596,6 +598,8 @@ bool FModManager::set_dsp_param(const std::string& DSP_name, const int index, co
 	return false;
 }
 
+
+
 bool FModManager::is_Fmod_ok(const bool show_error) const
 {
 	if (last_result_!=FMOD_OK)
@@ -663,4 +667,56 @@ const char* FModManager::FmodFormatEnumtoChar(FMOD_SOUND_FORMAT f) noexcept
 	case FMOD_SOUND_FORMAT_FORCEINT:			return "";
 	default:									return "";
 	}
+}
+
+bool FModManager::set_listener_position(const glm::vec3 position)
+{
+	FMOD_VECTOR fmod_position;
+
+	fmod_position.x = position.x;
+	fmod_position.y = position.y;
+	fmod_position.z = position.z;
+
+
+	return is_Fmod_ok(system_->set3DListenerAttributes(0, &fmod_position, nullptr, nullptr, nullptr));
+}
+
+bool FModManager::play_sound(const std::string& sound_name, glm::vec3 position, float max_distance)
+{
+	assert(system_ && "no system object");
+	assert(sound_.find(sound_name) != sound_.end() && "sound not found");
+
+	const auto sound = sound_.find(sound_name);
+	if (sound == sound_.end())
+	{
+		return false;
+	}
+
+	FMOD::Channel* channel;
+	if (!is_Fmod_ok(system_->playSound(sound->second, nullptr, true, &channel)))
+	{
+		return false;
+	}
+	
+	FMOD_VECTOR fmod_sound_position;
+	fmod_sound_position.x = position.x;
+	fmod_sound_position.y = position.y;
+	fmod_sound_position.z = position.z;
+
+	if (!is_Fmod_ok(channel->set3DAttributes(&fmod_sound_position, nullptr)))
+	{
+		return false;
+	}
+
+	if (!is_Fmod_ok(channel->set3DMinMaxDistance(1.0f, 10000))) 
+	{
+		return false;
+	}
+
+	if (!is_Fmod_ok(channel->setPaused(false)))
+	{
+		return false;
+	}
+
+	return true;
 }
