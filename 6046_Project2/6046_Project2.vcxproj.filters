@@ -34,6 +34,9 @@
     <Filter Include="XML">
       <UniqueIdentifier>{9ddb709f-f838-4b35-9f0d-3cf6b015a1dc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="FMOD">
+      <UniqueIdentifier>{8848231c-b49d-4f08-9c9a-c3f2c77ec8e5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\GUI\cGUI.cpp">
@@ -93,6 +96,12 @@
     <ClCompile Include="src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\FMOD\FModManager.cpp">
+      <Filter>FMOD</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FMOD\Sound_UI.cpp">
+      <Filter>FMOD</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\GUI\cGUI.h">
@@ -148,6 +157,12 @@
     </ClInclude>
     <ClInclude Include="src\globalOpenGL.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FMOD\FmodManager.h">
+      <Filter>FMOD</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FMOD\Sound_UI.h">
+      <Filter>FMOD</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

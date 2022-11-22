@@ -1,2 +1,6 @@
-﻿pugixml.lib(pugixml.obj) : warning LNK4099: PDB '' was not found with 'pugixml.lib(pugixml.obj)' or at ''; linking object as if no debug info
+﻿  Sound_UI.cpp
+C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\dev\inc\imgui\imgui.h(1,1): warning C4335: Mac file format detected: please convert the source file to either DOS or UNIX format
+C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\FMOD\Sound_UI.cpp(809,81): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\FMOD\Sound_UI.cpp(869,78): warning C4305: 'argument': truncation from 'double' to 'float'
+pugixml.lib(pugixml.obj) : warning LNK4099: PDB '' was not found with 'pugixml.lib(pugixml.obj)' or at ''; linking object as if no debug info
   6046_Project2.vcxproj -> C:\Users\HideyO\source\repos\6046_Media\6046_Project2\x64\Debug\6046_Project2.exe
