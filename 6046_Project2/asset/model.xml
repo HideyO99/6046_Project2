@@ -1,0 +1,176 @@
+<?xml version = "1.0" encoding="UTF-8"?>
+<PLYMODEL>
+	<model name="terrain">asset/model/terrain.ply
+		<modelInstance>terrain01
+			<posX>0</posX>
+			<posY>0</posY>
+			<posZ>0</posZ>
+			<rotateX>0</rotateX>
+			<rotateY>0</rotateY>
+			<rotateZ>0</rotateZ>
+		</modelInstance>
+	</model>
+	<model name="traffic">asset/model/traffic.ply
+		<modelInstance>traffic
+			<posX>10.3</posX>
+			<posY>0</posY>
+			<posZ>5.9</posZ>
+			<rotateX>0</rotateX>
+			<rotateY>-2.4</rotateY>
+			<rotateZ>0</rotateZ>
+		</modelInstance>
+	</model>
+	<model name="building1">asset/model/Buildings_69_SF.ply
+		<modelInstance>building01
+			<posX>20</posX>
+			<posY>6.7</posY>
+			<posZ>4.8</posZ>
+			<rotateX>0</rotateX>
+			<rotateY>2.33</rotateY>
+			<rotateZ>0</rotateZ>
+		</modelInstance>
+		
+	</model>
+	<model name="building2">asset/model/policestation.ply
+		<modelInstance>building02
+			<posX>24.2</posX>
+			<posY>-0.1</posY>
+			<posZ>13</posZ>
+			<rotateX>0</rotateX>
+			<rotateY>2.23</rotateY>
+			<rotateZ>0</rotateZ>
+		</modelInstance>
+		
+	</model>
+	<model name="building3">asset/model/Builds.ply
+		<modelInstance>building03
+			<posX>8</posX>
+			<posY>0.1</posY>
+			<posZ>-6.7</posZ>
+			<rotateX>0</rotateX>
+			<rotateY>5.47</rotateY>
+			<rotateZ>0</rotateZ>
+		</modelInstance>
+	</model>
+	<model name="electbox">asset/model/Electricbox.ply
+		<modelInstance>Electricbox01
+			<posX>14.8</posX>
+			<posY>0</posY>
+			<posZ>4.2</posZ>
+			<rotateX>0</rotateX>
+			<rotateY>-4</rotateY>
+			<rotateZ>0</rotateZ>
+		</modelInstance>
+	</model>
+	<model name="car1">asset/model/mc.ply
+		<modelInstance>mac01
+			<posX>9.8</posX>
+			<posY>0</posY>
+			<posZ>3.5</posZ>
+			<rotateX>0</rotateX>
+			<rotateY>-4</rotateY>
+			<rotateZ>0</rotateZ>
+		</modelInstance>
+	</model>
+		<model name="truck1">asset/model/truck.ply
+		<modelInstance>truck01
+			<posX>14.1</posX>
+			<posY>0</posY>
+			<posZ>8.1</posZ>
+			<rotateX>0</rotateX>
+			<rotateY>0.8</rotateY>
+			<rotateZ>0</rotateZ>
+		</modelInstance>
+	</model>
+	<model name="road">asset/model/road.ply
+		<modelInstance>road01
+			<posX>2.8</posX>
+			<posY>0</posY>
+			<posZ>-2.2</posZ>
+			<rotateX>0</rotateX>
+			<rotateY>0.75</rotateY>
+			<rotateZ>0</rotateZ>
+		</modelInstance>
+		<modelInstance>road02
+			<posX>17.7</posX>
+			<posY>0</posY>
+			<posZ>13.9</posZ>
+			<rotateX>0</rotateX>
+			<rotateY>0.75</rotateY>
+			<rotateZ>0</rotateZ>
+		</modelInstance>
+	</model>
+	<model name="lamp">asset/model/lamp.ply
+		<modelInstance>lamp01
+			<posX>7.5</posX>
+			<posY>0</posY>
+			<posZ>-2.3</posZ>
+			<rotateX>0</rotateX>
+			<rotateY>-2.75</rotateY>
+			<rotateZ>0</rotateZ>
+		</modelInstance>
+		<modelInstance>lamp02
+			<posX>14.1</posX>
+			<posY>0</posY>
+			<posZ>4.7</posZ>
+			<rotateX>0</rotateX>
+			<rotateY>-2.75</rotateY>
+			<rotateZ>0</rotateZ>
+		</modelInstance>
+		<modelInstance>lamp03
+			<posX>14.4</posX>
+			<posY>0</posY>
+			<posZ>13.9</posZ>
+			<rotateX>0</rotateX>
+			<rotateY>1.15</rotateY>
+			<rotateZ>0</rotateZ>
+		</modelInstance>
+		<modelInstance>lamp04
+			<posX>1.6</posX>
+			<posY>0</posY>
+			<posZ>0</posZ>
+			<rotateX>0</rotateX>
+			<rotateY>1.15</rotateY>
+			<rotateZ>0</rotateZ>
+		</modelInstance>
+	</model>
+		<model name="sphere">asset/model/ISO_Shphere_flat_3div_xyz_n_rgba_uv.ply
+		<modelInstance>light1
+			<posX>7.5</posX>
+			<posY>0</posY>
+			<posZ>-2.3</posZ>
+			<rotateX>0</rotateX>
+			<rotateY>-2.75</rotateY>
+			<rotateZ>0</rotateZ>
+		</modelInstance>
+		<modelInstance>light2
+			<posX>14.1</posX>
+			<posY>0</posY>
+			<posZ>4.7</posZ>
+			<rotateX>0</rotateX>
+			<rotateY>-2.75</rotateY>
+			<rotateZ>0</rotateZ>
+		</modelInstance>
+		<modelInstance>light3
+			<posX>14.4</posX>
+			<posY>0</posY>
+			<posZ>13.9</posZ>
+			<rotateX>0</rotateX>
+			<rotateY>1.15</rotateY>
+			<rotateZ>0</rotateZ>
+		</modelInstance>
+		<modelInstance>light4
+			<posX>1.6</posX>
+			<posY>0</posY>
+			<posZ>0</posZ>
+			<rotateX>0</rotateX>
+			<rotateY>1.15</rotateY>
+			<rotateZ>0</rotateZ>
+		</modelInstance>
+	</model>
+</PLYMODEL>
+<EYE_LOCATION>
+	<x>23</x>
+	<y>5.0</y>
+	<z>28.0</z>
+</EYE_LOCATION>
