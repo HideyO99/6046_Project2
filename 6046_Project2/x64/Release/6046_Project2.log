@@ -1,17 +1,1 @@
-﻿  main.cpp
-C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\dev\inc\imgui\imgui.h(1,1): warning C4335: Mac file format detected: please convert the source file to either DOS or UNIX format
-C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(177,64): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(181,64): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(185,64): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(189,67): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(197,61): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(68,42): warning C4101: 'fragment_shader': unreferenced local variable
-C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(68,27): warning C4101: 'vertex_shader': unreferenced local variable
-C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(68,59): warning C4101: 'program': unreferenced local variable
-C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(68,12): warning C4101: 'vertex_buffer': unreferenced local variable
-  Generating code
-  1 of 2495 functions (<0.1%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    25 functions had inline decision re-evaluated but remain unchanged
-  Finished generating code
-  6046_Project2.vcxproj -> C:\Users\HideyO\source\repos\6046_Media\6046_Project2\x64\Release\6046_Project2.exe
+﻿

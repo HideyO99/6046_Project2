@@ -11,6 +11,8 @@ c:\users\hideyo\source\repos\6046_media\6046_project2\6046_project2\x64\debug\ma
 c:\users\hideyo\source\repos\6046_media\6046_project2\6046_project2\x64\debug\clightmanager.obj
 c:\users\hideyo\source\repos\6046_media\6046_project2\6046_project2\x64\debug\clight.obj
 c:\users\hideyo\source\repos\6046_media\6046_project2\6046_project2\x64\debug\cgui.obj
+c:\users\hideyo\source\repos\6046_media\6046_project2\6046_project2\x64\debug\sound_ui.obj
+c:\users\hideyo\source\repos\6046_media\6046_project2\6046_project2\x64\debug\fmodmanager.obj
 c:\users\hideyo\source\repos\6046_media\6046_project2\6046_project2\x64\debug\imgui_widgets.obj
 c:\users\hideyo\source\repos\6046_media\6046_project2\6046_project2\x64\debug\imgui_tables.obj
 c:\users\hideyo\source\repos\6046_media\6046_project2\6046_project2\x64\debug\imgui_impl_opengl3.obj
@@ -19,15 +21,12 @@ c:\users\hideyo\source\repos\6046_media\6046_project2\6046_project2\x64\debug\im
 c:\users\hideyo\source\repos\6046_media\6046_project2\6046_project2\x64\debug\imgui_demo.obj
 c:\users\hideyo\source\repos\6046_media\6046_project2\6046_project2\x64\debug\imgui.obj
 c:\users\hideyo\source\repos\6046_media\6046_project2\6046_project2\x64\debug\glad.obj
+c:\users\hideyo\source\repos\6046_media\6046_project2\6046_project2\x64\debug\6046_project2.ilk
+c:\users\hideyo\source\repos\6046_media\6046_project2\x64\debug\6046_project2.exe
 c:\users\hideyo\source\repos\6046_media\6046_project2\x64\debug\6046_project2.pdb
 c:\users\hideyo\source\repos\6046_media\6046_project2\6046_project2\x64\debug\6046_project2.tlog\cl.command.1.tlog
 c:\users\hideyo\source\repos\6046_media\6046_project2\6046_project2\x64\debug\6046_project2.tlog\cl.read.1.tlog
 c:\users\hideyo\source\repos\6046_media\6046_project2\6046_project2\x64\debug\6046_project2.tlog\cl.write.1.tlog
-c:\users\hideyo\source\repos\6046_media\6046_project2\6046_project2\x64\debug\6046_project2.tlog\link-cvtres.read.1.tlog
-c:\users\hideyo\source\repos\6046_media\6046_project2\6046_project2\x64\debug\6046_project2.tlog\link-cvtres.write.1.tlog
-c:\users\hideyo\source\repos\6046_media\6046_project2\6046_project2\x64\debug\6046_project2.tlog\link-rc.read.1.tlog
-c:\users\hideyo\source\repos\6046_media\6046_project2\6046_project2\x64\debug\6046_project2.tlog\link-rc.write.1.tlog
 c:\users\hideyo\source\repos\6046_media\6046_project2\6046_project2\x64\debug\6046_project2.tlog\link.command.1.tlog
 c:\users\hideyo\source\repos\6046_media\6046_project2\6046_project2\x64\debug\6046_project2.tlog\link.read.1.tlog
-c:\users\hideyo\source\repos\6046_media\6046_project2\6046_project2\x64\debug\6046_project2.tlog\link.read.2.tlog
 c:\users\hideyo\source\repos\6046_media\6046_project2\6046_project2\x64\debug\6046_project2.tlog\link.write.1.tlog
