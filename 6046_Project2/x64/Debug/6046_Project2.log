@@ -1,47 +1,15 @@
-﻿  imgui.cpp
-C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\dev\inc\imgui\imgui.cpp(1,1): warning C4335: Mac file format detected: please convert the source file to either DOS or UNIX format
-  imgui_demo.cpp
-C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\dev\inc\imgui\imgui_demo.cpp(1,1): warning C4335: Mac file format detected: please convert the source file to either DOS or UNIX format
-  imgui_draw.cpp
-C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\dev\inc\imgui\imgui_draw.cpp(1,1): warning C4335: Mac file format detected: please convert the source file to either DOS or UNIX format
-  imgui_impl_glfw.cpp
+﻿  main.cpp
 C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\dev\inc\imgui\imgui.h(1,1): warning C4335: Mac file format detected: please convert the source file to either DOS or UNIX format
-  imgui_impl_opengl3.cpp
-C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\dev\inc\imgui\imgui.h(1,1): warning C4335: Mac file format detected: please convert the source file to either DOS or UNIX format
-  imgui_tables.cpp
-C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\dev\inc\imgui\imgui.h(1,1): warning C4335: Mac file format detected: please convert the source file to either DOS or UNIX format
-  imgui_widgets.cpp
-C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\dev\inc\imgui\imgui.h(1,1): warning C4335: Mac file format detected: please convert the source file to either DOS or UNIX format
-  FModManager.cpp
-C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\FMOD\FModManager.cpp(393,17): warning C4101: 'channel': unreferenced local variable
-  Sound_UI.cpp
-C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\dev\inc\imgui\imgui.h(1,1): warning C4335: Mac file format detected: please convert the source file to either DOS or UNIX format
-C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\FMOD\Sound_UI.cpp(809,81): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\FMOD\Sound_UI.cpp(869,78): warning C4305: 'argument': truncation from 'double' to 'float'
-  cGUI.cpp
-C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\dev\inc\imgui\imgui.h(1,1): warning C4335: Mac file format detected: please convert the source file to either DOS or UNIX format
-  cLight.cpp
-  cLightManager.cpp
-  main.cpp
-C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\dev\inc\imgui\imgui.h(1,1): warning C4335: Mac file format detected: please convert the source file to either DOS or UNIX format
-C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(177,64): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(181,64): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(185,64): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(189,67): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(197,61): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(68,42): warning C4101: 'fragment_shader': unreferenced local variable
-C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(68,27): warning C4101: 'vertex_shader': unreferenced local variable
-C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(68,59): warning C4101: 'program': unreferenced local variable
-C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(68,12): warning C4101: 'vertex_buffer': unreferenced local variable
-  cMeshObj.cpp
-  cShader.cpp
-  cShaderManager.cpp
-  cShaderProgram.cpp
-  cModelDrawInfo.cpp
-  cVAOManager.cpp
-  cXML.cpp
-  Generating Code...
-C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\GUI\cGUI.cpp(29): warning C4715: 'cGUI::ImGUI_init': not all control paths return a value
-  glad.c
-pugixml.lib(pugixml.obj) : warning LNK4099: PDB '' was not found with 'pugixml.lib(pugixml.obj)' or at ''; linking object as if no debug info
+C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(196,64): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(200,64): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(204,64): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(208,67): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(216,61): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(87,42): warning C4101: 'fragment_shader': unreferenced local variable
+C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(87,27): warning C4101: 'vertex_shader': unreferenced local variable
+C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(87,59): warning C4101: 'program': unreferenced local variable
+C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(87,12): warning C4101: 'vertex_buffer': unreferenced local variable
+C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(547,18): warning C4305: 'return': truncation from 'int' to 'bool'
+C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(558,18): warning C4305: 'return': truncation from 'int' to 'bool'
+C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(568,18): warning C4305: 'return': truncation from 'int' to 'bool'
   6046_Project2.vcxproj -> C:\Users\HideyO\source\repos\6046_Media\6046_Project2\x64\Debug\6046_Project2.exe
