@@ -508,18 +508,11 @@ void light0Setup() //lamp
 
 void light1Setup()
 {
-    //cDirLight* pDirLight = new cDirLight(*::g_pTheLightManager->plight[1]);
-    //*pDirLight->pDirection = glm::vec4(0.0f, -1.0f, 0.0f, 1.0f);
-    //*pDirLight->pDiffuse = glm::vec4(1.0f, 1.0f, 1.0f, 1.0f);
-    //*pDirLight->pSpecular = glm::vec4(0.f, 0.5f, 0.5f, 1.f);
-    //*pDirLight->pTurnON = 1;
     ::g_pTheLightManager->plight[4]->type = cLight::LightType::LIGHT_POINT;
     ::g_pTheLightManager->plight[4]->diffuse = glm::vec4(12.0f, 0.3f, 0.3f, 1.0f);
     ::g_pTheLightManager->plight[4]->position = glm::vec4(18.75f, 14.f, 3.65f, 1.0f);
     ::g_pTheLightManager->plight[4]->attenuation = glm::vec4(5.0f, 2.f, 0.5f, 1.0f);
     ::g_pTheLightManager->plight[4]->turnON = 1;
-
-
 
 }
 void light2Setup()
@@ -614,17 +607,13 @@ bool FMOD_setup()
     xml.readXML();
 
     result = fmodmanager.set_channel_vol(MASTER_CH, 0.5f);
-    //result = fmodmanager.create_stream("bgm1", xml.my_music[0], FMOD_LOOP_NORMAL, false);
-    //result = fmodmanager.create_stream("bgm2", xml.my_music[1], FMOD_LOOP_NORMAL, false);
-    //result = fmodmanager.create_stream("bgm3", xml.my_music[2], FMOD_LOOP_NORMAL, false);
-    result = fmodmanager.create_sound("fx1", xml.my_fx_path[0], FMOD_DEFAULT, false);
-    result = fmodmanager.create_sound("fx2", xml.my_fx_path[1], FMOD_DEFAULT, false);
-    result = fmodmanager.create_sound("fx3", xml.my_fx_path[2], FMOD_DEFAULT, false);
-    result = fmodmanager.create_sound("fx4", xml.my_fx_path[3], FMOD_DEFAULT, false);
-    result = fmodmanager.create_sound("fx5", xml.my_fx_path[4], FMOD_DEFAULT, false);
-    result = fmodmanager.create_sound("fx6", xml.my_fx_path[5], FMOD_DEFAULT, false);
-    result = fmodmanager.create_sound("fx7", xml.my_fx_path[6], FMOD_DEFAULT, false);
-    //result = fmodmanager.play_sound("bgm1", BGM_CH1);
+
+    result = fmodmanager.create_sound("fx1", xml.my_fx_path[0], FMOD_LOOP_NORMAL, false);
+    result = fmodmanager.create_sound("fx2", xml.my_fx_path[1], FMOD_LOOP_NORMAL, false);
+    result = fmodmanager.create_sound("fx3", xml.my_fx_path[2], FMOD_LOOP_NORMAL, false);
+    result = fmodmanager.create_sound("fx4", xml.my_fx_path[3], FMOD_LOOP_NORMAL, false);
+    result = fmodmanager.create_sound("fx5", xml.my_fx_path[4], FMOD_LOOP_NORMAL, false);
+
 
     result = fmodmanager.create_dsp(DSP_ECHO, FMOD_DSP_TYPE_ECHO);
     result = fmodmanager.create_dsp(DSP_DISTORTION, FMOD_DSP_TYPE_DISTORTION);

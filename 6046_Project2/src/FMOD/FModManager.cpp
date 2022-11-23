@@ -301,7 +301,7 @@ bool FModManager::create_sound(const std::string& Sound_name, const cXML::MyMusi
 	}
 
 	//3d mode
-	option |= FMOD_3D;
+	option |= FMOD_3D_LINEARSQUAREROLLOFF;
 
 	last_result_ = system_->createSound(sel_path.c_str(), option, nullptr, &sound);
 	if (!is_Fmod_ok())
@@ -332,7 +332,7 @@ bool FModManager::create_sound(const std::string& Sound_name, const std::string&
 	}
 
 	//3d mode
-	option |= FMOD_3D;
+	option |= FMOD_3D_LINEARSQUAREROLLOFF;
 
 	last_result_ = system_->createSound(path.c_str(), option, nullptr, &sound);
 	if (!is_Fmod_ok())
@@ -743,7 +743,7 @@ bool FModManager::play_sound(const std::string& sound_name, glm::vec3 position, 
 		return false;
 	}
 
-	if (!is_Fmod_ok(channel->set3DMinMaxDistance(1.0f, 10000))) 
+	if (!is_Fmod_ok(channel->set3DMinMaxDistance(1.0f, max_distance)))
 	{
 		return false;
 	}

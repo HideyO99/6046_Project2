@@ -1,16 +1,4 @@
 <music>
-	<fname>The_Last_Encounter
-		<path format="wav">./resource/music/The_Last_Encounter.wav</path>
-		<path format="mp3">./resource/music/The_Last_Encounter.mp3</path>
-	</fname>
-	<fname>Death_Is_Just_Another_Path
-		<path format="wav">./resource/music/Death_Is_Just_Another_Path.wav</path>
-		<path format="mp3">./resource/music/Death_Is_Just_Another_Path.mp3</path>
-	</fname>
-	<fname>Otto_Halmen-Sylvan_Waltz
-		<path format="wav">./resource/music/Otto_Halmen-Sylvan_Waltz.wav</path>
-		<path format="mp3">./resource/music/Otto_Halmen-Sylvan_Waltz.mp3</path>
-	</fname>
 </music>
 <fx>
 	<fname>FX1
