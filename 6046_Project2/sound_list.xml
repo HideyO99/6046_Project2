@@ -1,25 +1,17 @@
-<music>
-</music>
 <fx>
 	<fname>FX1
-		<path>./resource/fx/random1.wav</path>
+		<path>./resource/fx/386948__gnuoctathorpe__motor.wav</path>
 	</fname>
 	<fname>FX2
-		<path>./resource/fx/rain.wav</path>
+		<path>./resource/fx/Deep_Purple_Highway_Star.mp3</path>
 	</fname>
 	<fname>FX3
-		<path>./resource/fx/wind_1.wav</path>
+		<path>./resource/fx/Separate_Ways.mp3</path>
 	</fname>
 	<fname>FX4
-		<path>./resource/fx/thunder_4_near.wav</path>
+		<path>./resource/fx/432726__vortichez__brooklyn-myrtle-avenue-subway-station-fight.wav</path>
 	</fname>
 	<fname>FX5
-		<path>./resource/fx/shotgun.wav</path>
-	</fname>
-	<fname>FX6
-		<path>./resource/fx/rifle.wav</path>
-	</fname>
-	<fname>FX7
-		<path>./resource/fx/explode.wav</path>
+		<path>./resource/fx/Psycho_Killer.mp3</path>
 	</fname>
 </fx>

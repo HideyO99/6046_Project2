@@ -272,21 +272,21 @@ int main(void)
         result = pVAOManager->getInstanceObjPosition("building01", Obj_Pos);
         SoundPos_3D.push_back(Obj_Pos);
 
-        fmodmanager.play_sound(fmodmanager.vec_sound_[2].c_str(), Obj_Pos, 5.f);
+        fmodmanager.play_sound(fmodmanager.vec_sound_[2].c_str(), Obj_Pos, 10.f);
     }
     {//sound 4 setup
         glm::vec3 Obj_Pos;
         result = pVAOManager->getInstanceObjPosition("building02", Obj_Pos);
         SoundPos_3D.push_back(Obj_Pos);
 
-        fmodmanager.play_sound(fmodmanager.vec_sound_[3].c_str(), Obj_Pos, 5.f);
+        fmodmanager.play_sound(fmodmanager.vec_sound_[3].c_str(), Obj_Pos, 10.f);
     }
-    {//sound 5 setup
+    {//sound 5 setup //play psycho killer
         glm::vec3 Obj_Pos;
         result = pVAOManager->getInstanceObjPosition("building03", Obj_Pos);
         SoundPos_3D.push_back(Obj_Pos);
 
-        fmodmanager.play_sound(fmodmanager.vec_sound_[4].c_str(), Obj_Pos, 5.f);
+        fmodmanager.play_sound(fmodmanager.vec_sound_[4].c_str(), Obj_Pos, 10.f);
     }
 
     while (!glfwWindowShouldClose(window))

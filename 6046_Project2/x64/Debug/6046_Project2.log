@@ -1,4 +1,15 @@
-﻿  FModManager.cpp
-C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\FMOD\FModManager.cpp(17,14): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\FMOD\FModManager.cpp(420,17): warning C4101: 'channel': unreferenced local variable
+﻿  main.cpp
+C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\dev\inc\imgui\imgui.h(1,1): warning C4335: Mac file format detected: please convert the source file to either DOS or UNIX format
+C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(199,64): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(203,64): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(207,64): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(211,67): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(219,61): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(90,42): warning C4101: 'fragment_shader': unreferenced local variable
+C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(90,27): warning C4101: 'vertex_shader': unreferenced local variable
+C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(90,59): warning C4101: 'program': unreferenced local variable
+C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(90,12): warning C4101: 'vertex_buffer': unreferenced local variable
+C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(582,18): warning C4305: 'return': truncation from 'int' to 'bool'
+C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(593,18): warning C4305: 'return': truncation from 'int' to 'bool'
+C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(603,18): warning C4305: 'return': truncation from 'int' to 'bool'
   6046_Project2.vcxproj -> C:\Users\HideyO\source\repos\6046_Media\6046_Project2\x64\Debug\6046_Project2.exe
