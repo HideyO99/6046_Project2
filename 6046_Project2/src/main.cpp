@@ -334,8 +334,6 @@ int main(void)
         glfwSwapBuffers(window);
         glfwPollEvents();
 
-        //set window title
-        //std::stringstream 
 
     }
 
@@ -583,21 +581,15 @@ bool FMOD_setup()
     }
 
     result = fmodmanager.create_channel(MASTER_CH);
-    //result = fmodmanager.create_channel(BGM_CH1);
-    //result = fmodmanager.create_channel(BGM_CH2);
-    //result = fmodmanager.create_channel(BGM_CH3);
     result = fmodmanager.create_channel(FX1_CH);
-    //result = fmodmanager.create_channel(FX2_CH);
+
     if (!result)
     {
         return -3;
     }
 
-    //result = fmodmanager.set_channel_parent(BGM_CH1, MASTER_CH);
-    //result = fmodmanager.set_channel_parent(BGM_CH2, MASTER_CH);
-    //result = fmodmanager.set_channel_parent(BGM_CH3, MASTER_CH);
     result = fmodmanager.set_channel_parent(FX1_CH, MASTER_CH);
-    //result = fmodmanager.set_channel_parent(FX2_CH, MASTER_CH);
+
     if (!result)
     {
         return -4;
@@ -615,15 +607,7 @@ bool FMOD_setup()
     result = fmodmanager.create_sound("fx5", xml.my_fx_path[4], FMOD_LOOP_NORMAL, false);
 
 
-    //result = fmodmanager.create_dsp(DSP_ECHO, FMOD_DSP_TYPE_ECHO);
-    //result = fmodmanager.create_dsp(DSP_DISTORTION, FMOD_DSP_TYPE_DISTORTION);
-    //result = fmodmanager.create_dsp(DSP_CHORUS, FMOD_DSP_TYPE_CHORUS);
-    //result = fmodmanager.create_dsp(DSP_LOWPASSFILTER, FMOD_DSP_TYPE_LOWPASS);
-    //result = fmodmanager.create_dsp(DSP_HIGHPASSFILTER, FMOD_DSP_TYPE_HIGHPASS);
-    //result = fmodmanager.create_dsp(DSP_FADER, FMOD_DSP_TYPE_FADER);
-    //result = fmodmanager.create_dsp(DSP_PITCHSHIFT, FMOD_DSP_TYPE_PITCHSHIFT);
-    //result = fmodmanager.create_dsp(DSP_FLANGE, FMOD_DSP_TYPE_FLANGE);
-    //result = fmodmanager.create_dsp(DSP_TREMELO, FMOD_DSP_TYPE_TREMOLO);
+
     return result;
 }
 

@@ -50,8 +50,10 @@ void FModManager::shutdown()
 	{
 		i->second->release();
 	}
+
 	sound_.clear();
-	
+	vec_sound_.clear();
+
 	for (auto i = channel_group_.begin(); i != channel_group_.end(); ++i)
 	{
 		i->second->group_ptr->release();
@@ -63,6 +65,7 @@ void FModManager::shutdown()
 		system_->release();
 		system_ = nullptr;
 	}
+	
 }
 
 bool FModManager::create_channel(const std::string& CH_name)
