@@ -253,14 +253,14 @@ int main(void)
     result = FMOD_setup();
     std::vector<glm::vec3> SoundPos_3D;
 
-    { //sound 1 setup
+    { //sound 1 setup //play vroom vroom
         glm::vec3 Obj_Pos;
         result = pVAOManager->getInstanceObjPosition("truck01", Obj_Pos);
         SoundPos_3D.push_back(Obj_Pos);
 
-        fmodmanager.play_sound(fmodmanager.vec_sound_[0].c_str(), Obj_Pos, 5.f);
+        fmodmanager.play_sound(fmodmanager.vec_sound_[0].c_str(), Obj_Pos, 7.f);
     }
-    {//sound 2 setup
+    {//sound 2 setup //play highway star
         glm::vec3 Obj_Pos;
         result = pVAOManager->getInstanceObjPosition("mac01", Obj_Pos);
         SoundPos_3D.push_back(Obj_Pos);
@@ -268,13 +268,13 @@ int main(void)
         fmodmanager.play_sound(fmodmanager.vec_sound_[1].c_str(), Obj_Pos, 5.f);
     }
     {//sound 3 setup
-        glm::vec3 Obj_Pos;
+        glm::vec3 Obj_Pos; // play separate way
         result = pVAOManager->getInstanceObjPosition("building01", Obj_Pos);
         SoundPos_3D.push_back(Obj_Pos);
 
         fmodmanager.play_sound(fmodmanager.vec_sound_[2].c_str(), Obj_Pos, 10.f);
     }
-    {//sound 4 setup
+    {//sound 4 setup // play subway station fight
         glm::vec3 Obj_Pos;
         result = pVAOManager->getInstanceObjPosition("building02", Obj_Pos);
         SoundPos_3D.push_back(Obj_Pos);
@@ -286,7 +286,7 @@ int main(void)
         result = pVAOManager->getInstanceObjPosition("building03", Obj_Pos);
         SoundPos_3D.push_back(Obj_Pos);
 
-        fmodmanager.play_sound(fmodmanager.vec_sound_[4].c_str(), Obj_Pos, 10.f);
+        fmodmanager.play_sound(fmodmanager.vec_sound_[4].c_str(), Obj_Pos, 13.f);
     }
 
     while (!glfwWindowShouldClose(window))
@@ -583,21 +583,21 @@ bool FMOD_setup()
     }
 
     result = fmodmanager.create_channel(MASTER_CH);
-    result = fmodmanager.create_channel(BGM_CH1);
-    result = fmodmanager.create_channel(BGM_CH2);
-    result = fmodmanager.create_channel(BGM_CH3);
+    //result = fmodmanager.create_channel(BGM_CH1);
+    //result = fmodmanager.create_channel(BGM_CH2);
+    //result = fmodmanager.create_channel(BGM_CH3);
     result = fmodmanager.create_channel(FX1_CH);
-    result = fmodmanager.create_channel(FX2_CH);
+    //result = fmodmanager.create_channel(FX2_CH);
     if (!result)
     {
         return -3;
     }
 
-    result = fmodmanager.set_channel_parent(BGM_CH1, MASTER_CH);
-    result = fmodmanager.set_channel_parent(BGM_CH2, MASTER_CH);
-    result = fmodmanager.set_channel_parent(BGM_CH3, MASTER_CH);
+    //result = fmodmanager.set_channel_parent(BGM_CH1, MASTER_CH);
+    //result = fmodmanager.set_channel_parent(BGM_CH2, MASTER_CH);
+    //result = fmodmanager.set_channel_parent(BGM_CH3, MASTER_CH);
     result = fmodmanager.set_channel_parent(FX1_CH, MASTER_CH);
-    result = fmodmanager.set_channel_parent(FX2_CH, MASTER_CH);
+    //result = fmodmanager.set_channel_parent(FX2_CH, MASTER_CH);
     if (!result)
     {
         return -4;
@@ -615,15 +615,15 @@ bool FMOD_setup()
     result = fmodmanager.create_sound("fx5", xml.my_fx_path[4], FMOD_LOOP_NORMAL, false);
 
 
-    result = fmodmanager.create_dsp(DSP_ECHO, FMOD_DSP_TYPE_ECHO);
-    result = fmodmanager.create_dsp(DSP_DISTORTION, FMOD_DSP_TYPE_DISTORTION);
-    result = fmodmanager.create_dsp(DSP_CHORUS, FMOD_DSP_TYPE_CHORUS);
-    result = fmodmanager.create_dsp(DSP_LOWPASSFILTER, FMOD_DSP_TYPE_LOWPASS);
-    result = fmodmanager.create_dsp(DSP_HIGHPASSFILTER, FMOD_DSP_TYPE_HIGHPASS);
-    result = fmodmanager.create_dsp(DSP_FADER, FMOD_DSP_TYPE_FADER);
-    result = fmodmanager.create_dsp(DSP_PITCHSHIFT, FMOD_DSP_TYPE_PITCHSHIFT);
-    result = fmodmanager.create_dsp(DSP_FLANGE, FMOD_DSP_TYPE_FLANGE);
-    result = fmodmanager.create_dsp(DSP_TREMELO, FMOD_DSP_TYPE_TREMOLO);
+    //result = fmodmanager.create_dsp(DSP_ECHO, FMOD_DSP_TYPE_ECHO);
+    //result = fmodmanager.create_dsp(DSP_DISTORTION, FMOD_DSP_TYPE_DISTORTION);
+    //result = fmodmanager.create_dsp(DSP_CHORUS, FMOD_DSP_TYPE_CHORUS);
+    //result = fmodmanager.create_dsp(DSP_LOWPASSFILTER, FMOD_DSP_TYPE_LOWPASS);
+    //result = fmodmanager.create_dsp(DSP_HIGHPASSFILTER, FMOD_DSP_TYPE_HIGHPASS);
+    //result = fmodmanager.create_dsp(DSP_FADER, FMOD_DSP_TYPE_FADER);
+    //result = fmodmanager.create_dsp(DSP_PITCHSHIFT, FMOD_DSP_TYPE_PITCHSHIFT);
+    //result = fmodmanager.create_dsp(DSP_FLANGE, FMOD_DSP_TYPE_FLANGE);
+    //result = fmodmanager.create_dsp(DSP_TREMELO, FMOD_DSP_TYPE_TREMOLO);
     return result;
 }
 
@@ -639,10 +639,12 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
     if (key == GLFW_KEY_A)
     {
         ::g_cameraEye.x -= CAMERA_MOVE_SPEED;
+        ::g_cameraEye.z += CAMERA_MOVE_SPEED;
     }
     if (key == GLFW_KEY_D)
     {
         ::g_cameraEye.x += CAMERA_MOVE_SPEED;
+        ::g_cameraEye.z -= CAMERA_MOVE_SPEED;
     }
     if (key == GLFW_KEY_W)
     {
@@ -662,11 +664,13 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
     {
         ::g_cameraEye.y += CAMERA_MOVE_SPEED;
     }
+    if (key == GLFW_KEY_R) //reset camera position
+    {
+        ::g_cameraEye = glm::vec3(23.f, 1.f, 28.f);
+    }
     if (key == GLFW_KEY_SPACE && action == GLFW_RELEASE)
     {
-        //::g_cameraEye = glm::vec3(-5.5f, -3.4f, 15.0f);
-        //::g_cameraEye = glm::vec3(0.0, 100.0, 300.0f);
-        //::g_cameraTarget = glm::vec3(5.0f, 0.0f, 0.0f);
+
         bIsWalkAround = !bIsWalkAround;
 
     }
