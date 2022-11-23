@@ -78,9 +78,11 @@ public:
 	bool set_dsp_param(const std::string& DSP_name, const int index, const float value);
 
 	//3d sound
-	bool set_listener_position(const glm::vec3 position);
+	bool update_listener_position(const glm::vec3 position);
 	bool set_speaker_position();
 	bool set_SWFormat(const bool isSurround);
+
+	std::vector<std::string> vec_sound_;
 
 protected:
 	FMOD_RESULT last_result_;

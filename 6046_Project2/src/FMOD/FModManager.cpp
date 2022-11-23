@@ -4,6 +4,7 @@ FModManager::FModManager()
 {
 	last_result_ = FMOD_OK;
 	system_ = nullptr;
+	vec_sound_.clear();
 }
 
 FModManager::~FModManager()
@@ -309,6 +310,7 @@ bool FModManager::create_sound(const std::string& Sound_name, const cXML::MyMusi
 	}
 
 	sound_.try_emplace(Sound_name, sound); //add to sound map
+	vec_sound_.push_back(Sound_name);
 	
 	return true;
 }
@@ -339,6 +341,7 @@ bool FModManager::create_sound(const std::string& Sound_name, const std::string&
 	}
 
 	sound_.try_emplace(Sound_name, sound); //add to sound map
+	vec_sound_.push_back(Sound_name);
 
 	return true;
 }
@@ -673,7 +676,7 @@ const char* FModManager::FmodFormatEnumtoChar(FMOD_SOUND_FORMAT f) noexcept
 	}
 }
 
-bool FModManager::set_listener_position(const glm::vec3 position)
+bool FModManager::update_listener_position(const glm::vec3 position)
 {
 	FMOD_VECTOR fmod_position;
 
@@ -681,8 +684,8 @@ bool FModManager::set_listener_position(const glm::vec3 position)
 	fmod_position.y = position.y;
 	fmod_position.z = position.z;
 
-
-	return is_Fmod_ok(system_->set3DListenerAttributes(0, &fmod_position, nullptr, nullptr, nullptr));
+	is_Fmod_ok(system_->set3DListenerAttributes(0, &fmod_position, nullptr, nullptr, nullptr));
+	return is_Fmod_ok(system_->update());
 }
 
 bool FModManager::set_speaker_position()
