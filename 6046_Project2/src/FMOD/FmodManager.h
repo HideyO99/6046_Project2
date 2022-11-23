@@ -23,7 +23,7 @@ public:
 		CHgroup();
 	};
 
-	bool Fmod_init(const int num_channel, const int system_flag);
+	bool Fmod_init(const int num_channel, const int system_flag, const bool isSurround);
 	void shutdown();
 
 	bool create_channel(const std::string& CH_name);
@@ -79,6 +79,8 @@ public:
 
 	//3d sound
 	bool set_listener_position(const glm::vec3 position);
+	bool set_speaker_position();
+	bool set_SWFormat(const bool isSurround);
 
 protected:
 	FMOD_RESULT last_result_;

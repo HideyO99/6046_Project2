@@ -10,15 +10,28 @@ FModManager::~FModManager()
 {
 }
 
-bool FModManager::Fmod_init(const int num_channel, const int system_flag)
+float degtorad(float deg)
+{
+	double pi = 3.14159265359;
+	return (deg * (pi / 180));
+}
+
+bool FModManager::Fmod_init(const int num_channel, const int system_flag, const bool isSurround)
 {
 	last_result_ = System_Create(&system_);
 	if (!is_Fmod_ok())
 	{
 		return false;
 	}
+	//set speaker mode
+	if (!set_SWFormat(isSurround))
+	{
+		return false;
+	}
 
 	last_result_ = system_->init(num_channel, system_flag, nullptr);
+
+	
 
 	return is_Fmod_ok();
 
@@ -286,6 +299,9 @@ bool FModManager::create_sound(const std::string& Sound_name, const cXML::MyMusi
 		option |= FMOD_CREATECOMPRESSEDSAMPLE;
 	}
 
+	//3d mode
+	option |= FMOD_3D;
+
 	last_result_ = system_->createSound(sel_path.c_str(), option, nullptr, &sound);
 	if (!is_Fmod_ok())
 	{
@@ -313,6 +329,9 @@ bool FModManager::create_sound(const std::string& Sound_name, const std::string&
 		option |= FMOD_CREATECOMPRESSEDSAMPLE;
 	}
 
+	//3d mode
+	option |= FMOD_3D;
+
 	last_result_ = system_->createSound(path.c_str(), option, nullptr, &sound);
 	if (!is_Fmod_ok())
 	{
@@ -339,6 +358,9 @@ bool FModManager::create_stream(const std::string& stream_name, const cXML::MyMu
 		sel_path = path.path[1];
 		option |= FMOD_CREATECOMPRESSEDSAMPLE;
 	}
+
+	//3d mode
+	option |= FMOD_3D;
 
 	last_result_ = system_->createStream(sel_path.c_str(), option, nullptr, &sound);
 	if (!is_Fmod_ok())
@@ -528,24 +550,6 @@ bool FModManager::remove_dsp(const std::string& CH_name, const std::string& fx_n
 	return is_Fmod_ok();
 }
 
-//bool FModManager::create_dsp(const std::string& DSP_name, FMOD_DSP_TYPE DSP_type, const float value)
-//{
-//	FMOD::DSP* dsp;
-//	last_result_ = system_->createDSPByType(DSP_type, &dsp);
-//	if (!is_Fmod_ok())
-//	{
-//		return false;
-//	}
-//	
-//	last_result_ = dsp->setParameterFloat(0, value);
-//	if (!is_Fmod_ok())
-//	{
-//		return false;
-//	}
-//	dsp_.try_emplace(DSP_name, dsp);
-//	
-//	return true;
-//}
 bool FModManager::create_dsp(const std::string& DSP_name, FMOD_DSP_TYPE DSP_type)
 {
 	FMOD::DSP* dsp;
@@ -595,7 +599,7 @@ bool FModManager::set_dsp_param(const std::string& DSP_name, const int index, co
 	last_result_ = dsp_i->second->setParameterFloat(index, value);
 
 	return is_Fmod_ok();
-	return false;
+	//return false;
 }
 
 
@@ -679,6 +683,34 @@ bool FModManager::set_listener_position(const glm::vec3 position)
 
 
 	return is_Fmod_ok(system_->set3DListenerAttributes(0, &fmod_position, nullptr, nullptr, nullptr));
+}
+
+bool FModManager::set_speaker_position()
+{
+	last_result_ = system_->setSpeakerPosition(FMOD_SPEAKER_FRONT_LEFT,		sin(degtorad(-30)), cos(degtorad(-30)), true);
+	last_result_ = system_->setSpeakerPosition(FMOD_SPEAKER_FRONT_RIGHT,	sin(degtorad(30)),	cos(degtorad(30)),	true);
+	last_result_ = system_->setSpeakerPosition(FMOD_SPEAKER_FRONT_CENTER,	sin(degtorad(0)),	cos(degtorad(0)),	true);
+	last_result_ = system_->setSpeakerPosition(FMOD_SPEAKER_SURROUND_LEFT,	sin(degtorad(-90)), cos(degtorad(-90)), true);
+	last_result_ = system_->setSpeakerPosition(FMOD_SPEAKER_SURROUND_RIGHT, sin(degtorad(90)),	cos(degtorad(90)),	true);
+	return is_Fmod_ok();
+}
+
+bool FModManager::set_SWFormat(const bool isSurround)
+{
+	FMOD_SPEAKERMODE option;
+	int numSpeaker;
+	if (isSurround)
+	{
+		option = FMOD_SPEAKERMODE_SURROUND;
+		numSpeaker = 5;
+	}
+	else
+	{
+		option = FMOD_SPEAKERMODE_STEREO;
+		numSpeaker = 2;
+	}
+	last_result_ = system_->setSoftwareFormat(48000, option, numSpeaker);
+	return is_Fmod_ok();
 }
 
 bool FModManager::play_sound(const std::string& sound_name, glm::vec3 position, float max_distance)

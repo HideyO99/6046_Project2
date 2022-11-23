@@ -1,15 +1,24 @@
-﻿  main.cpp
+﻿  FModManager.cpp
+C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\FMOD\FModManager.cpp(16,14): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\FMOD\FModManager.cpp(417,17): warning C4101: 'channel': unreferenced local variable
+  Sound_UI.cpp
 C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\dev\inc\imgui\imgui.h(1,1): warning C4335: Mac file format detected: please convert the source file to either DOS or UNIX format
-C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(196,64): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(200,64): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(204,64): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(208,67): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(216,61): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(87,42): warning C4101: 'fragment_shader': unreferenced local variable
-C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(87,27): warning C4101: 'vertex_shader': unreferenced local variable
-C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(87,59): warning C4101: 'program': unreferenced local variable
-C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(87,12): warning C4101: 'vertex_buffer': unreferenced local variable
-C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(574,18): warning C4305: 'return': truncation from 'int' to 'bool'
-C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(585,18): warning C4305: 'return': truncation from 'int' to 'bool'
-C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(595,18): warning C4305: 'return': truncation from 'int' to 'bool'
+C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\FMOD\Sound_UI.cpp(809,81): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\FMOD\Sound_UI.cpp(869,78): warning C4305: 'argument': truncation from 'double' to 'float'
+  main.cpp
+C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\dev\inc\imgui\imgui.h(1,1): warning C4335: Mac file format detected: please convert the source file to either DOS or UNIX format
+C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(199,64): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(203,64): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(207,64): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(211,67): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(219,61): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(90,42): warning C4101: 'fragment_shader': unreferenced local variable
+C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(90,27): warning C4101: 'vertex_shader': unreferenced local variable
+C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(90,59): warning C4101: 'program': unreferenced local variable
+C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(90,12): warning C4101: 'vertex_buffer': unreferenced local variable
+C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(577,18): warning C4305: 'return': truncation from 'int' to 'bool'
+C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(588,18): warning C4305: 'return': truncation from 'int' to 'bool'
+C:\Users\HideyO\source\repos\6046_Media\6046_Project2\6046_Project2\src\main.cpp(598,18): warning C4305: 'return': truncation from 'int' to 'bool'
+  Generating Code...
+pugixml.lib(pugixml.obj) : warning LNK4099: PDB '' was not found with 'pugixml.lib(pugixml.obj)' or at ''; linking object as if no debug info
   6046_Project2.vcxproj -> C:\Users\HideyO\source\repos\6046_Media\6046_Project2\x64\Debug\6046_Project2.exe

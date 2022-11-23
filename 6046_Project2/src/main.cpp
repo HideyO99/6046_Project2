@@ -36,6 +36,9 @@
 #define	FX1_CH		"fx1"
 #define FX2_CH		"fx2"
 
+//surroud mode enable
+#define ENABLE_SURROUND true
+
 //graphic
 #define MODEL_LIST_XML          "asset/model.xml"
 #define VERTEX_SHADER_FILE      "src/shader/vertexShader.glsl"
@@ -568,7 +571,7 @@ bool FMOD_setup()
 {
     bool result;
     //init fmod
-    result = fmodmanager.Fmod_init(MAX_CHANNEL, FMOD_INIT_NORMAL);
+    result = fmodmanager.Fmod_init(MAX_CHANNEL, FMOD_INIT_NORMAL, ENABLE_SURROUND);
     if (!result)
     {
         return -2;
